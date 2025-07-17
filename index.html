@@ -141,11 +141,13 @@
             >
               <i class="bi bi-clock"></i>
             </div>
-<div class="text-xs sm:text-sm leading-tight">
+<div class="text-xs sm:text-sm leading-tight px-1 py-1 space-y-1">
   <div>Mon–Fri: 7:30am – 5:00pm</div>
   <div>Sat: 8:00am – 3:00pm</div>
   <div>Sun: Closed</div>
 </div>
+
+
         </div>
       </div>
     </section>
@@ -158,8 +160,9 @@
         <div class="flex items-center justify-between w-full lg:w-auto">
           <!-- Logo -->
           <div class="flex items-center gap-2">
-            <img src="assets\logo\PA-Flyscreen-Logo-Extract.jpg" class="h-14" alt="logo" />
-          </div>
+  <img src="assets/logo/PA-Flyscreen-Logo-Extract.jpg" class="h-20" alt="logo" />
+</div>
+
           <!-- Hamburger Icon -->
           <button onclick="toggleDrawer()" class="block lg:hidden">
             <i class="bi bi-list text-2xl"></i>
@@ -247,7 +250,7 @@
 
 <!-- ✅ Hero Section with Background + Form -->
 <section id="home"
-  class="relative min-h-[85vh] sm:min-h-screen bg-cover bg-center bg-no-repeat overflow-visible flex flex-col justify-center items-center"
+  class="relative min-h-[90vh] sm:min-h-[100vh] bg-cover bg-center bg-no-repeat overflow-visible flex flex-col justify-center items-center"
   style="background-image: url('./images/IMG_07.jpeg');"
 >
   <!-- Blurred overlay on mobile only -->
@@ -256,7 +259,7 @@
   <!-- Clipped red overlay for desktop only -->
   <div class="absolute inset-0 bg-[#f91c52]/80 clip-path-[ellipse(65%_100%_at_0%_50%)] animate-fadeIn z-[1] hidden sm:block"></div>
 
-  <!-- Main Content Container -->
+  <!-- Main Content -->
   <div class="relative z-[2] flex flex-col md:flex-row justify-between items-center w-full max-w-[1200px] mx-auto px-4 py-10">
     
     <!-- TEXT CONTENT -->
@@ -302,11 +305,11 @@
   </div>
 
   <!-- Overlapping Cards -->
-  <div class="absolute bottom-[-90px] left-1/2 transform -translate-x-1/2 w-full max-w-6xl px-4 z-[3]">
+  <div class="sm:absolute sm:bottom-[-60px] sm:left-1/2 sm:transform sm:-translate-x-1/2 w-full max-w-6xl px-4 z-[3] mt-10 sm:mt-0">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       
       <!-- Card 1 -->
-      <div class="bg-black/90 text-white p-6 rounded-lg shadow-2xl min-h-[280px] transition hover:scale-[1.02]">
+      <div class="bg-black/90 text-white p-6 rounded-lg shadow-2xl min-h-[260px] transition hover:scale-[1.02]">
         <div class="flex justify-between items-center mb-4">
           <div class="flex items-center gap-2">
             <svg class="w-6 h-6 text-[#f91c52]" fill="currentColor" viewBox="0 0 20 20">
@@ -317,12 +320,12 @@
           <span class="text-2xl font-bold text-white/20">01</span>
         </div>
         <p class="text-sm text-white/80">
-          Vivamus posuere nibh faucibus dictum fermentum. Curabitur vel tellus ut elit tempus tristique eu vel ex.
+          Made-to-measure flyscreens and advanced monitoring systems to keep your home safe, secure, and comfortable.
         </p>
       </div>
 
       <!-- Card 2 -->
-      <div class="bg-black/90 text-white p-6 rounded-lg shadow-2xl min-h-[280px] transition hover:scale-[1.02]">
+      <div class="bg-black/90 text-white p-6 rounded-lg shadow-2xl min-h-[260px] transition hover:scale-[1.02]">
         <div class="flex justify-between items-center mb-4">
           <div class="flex items-center gap-2">
             <svg class="w-6 h-6 text-[#f91c52]" fill="currentColor" viewBox="0 0 24 24">
@@ -333,12 +336,12 @@
           <span class="text-2xl font-bold text-white/20">02</span>
         </div>
         <p class="text-sm text-white/80">
-          Vivamus posuere nibh faucibus dictum fermentum. Curabitur vel tellus ut elit tempus tristique eu vel ex.
+          Secure your digital presence with robust data protection, privacy controls, and encrypted communications.
         </p>
       </div>
 
       <!-- Card 3 -->
-      <div class="bg-black/90 text-white p-6 rounded-lg shadow-2xl min-h-[280px] transition hover:scale-[1.02]">
+      <div class="bg-black/90 text-white p-6 rounded-lg shadow-2xl min-h-[260px] transition hover:scale-[1.02]">
         <div class="flex justify-between items-center mb-4">
           <div class="flex items-center gap-2">
             <svg class="w-6 h-6 text-[#f91c52]" fill="currentColor" viewBox="0 0 24 24">
@@ -349,13 +352,15 @@
           <span class="text-2xl font-bold text-white/20">03</span>
         </div>
         <p class="text-sm text-white/80">
-          Vivamus posuere nibh faucibus dictum fermentum. Curabitur vel tellus ut elit tempus tristique eu vel ex.
+          24/7 expert support for installations, troubleshooting, and customer queries—fast, friendly, and reliable.
         </p>
       </div>
 
     </div>
   </div>
 </section>
+
+
 
 <!-- Space below so cards don’t get cut -->
 <div class="h-44 bg-[#f5f5f5]"></div>
@@ -442,57 +447,56 @@
 
     
 
-<section id="services"
- class="bg-[#f5f5f5] pt-40 px-4" id="offer">
+<section id="services" class="bg-[#f5f5f5] pt-40 px-4">
   <div class="max-w-7xl mx-auto">
-    <!-- Section Title -->
-    <div class="mb-12 sm:col-span-2 lg:col-span-3">
-      <h3 class="text-[#FF0F47] text-sm font-bold border-b-2 border-[#FF0F47] w-8 mb-2"></h3>
-      <h2 class="text-5xl font-extrabold leading-tight text-gray-900">
-        What Can <br />
-        We Offer <br />
-        Security
-      </h2>
+    <!-- Title and top cards -->
+    <div class="flex flex-col lg:flex-row gap-10 items-start">
+      
+      <!-- Left: Heading -->
+      <div class="lg:w-1/3 w-full">
+        <h3 class="text-[#FF0F47] text-sm font-bold border-b-2 border-[#FF0F47] w-8 mb-4"></h3>
+        <h2 class="text-4xl lg:text-5xl font-extrabold leading-tight text-gray-900 mb-6">
+          What Can <br />
+          We Offer <br />
+          Security
+        </h2>
+      </div>
+
+      <!-- Right: Top Row Cards -->
+      <div class="lg:w-2/3 w-full grid sm:grid-cols-2 gap-6">
+        <!-- Card 1 -->
+        <div class="group bg-white border p-8 rounded shadow-sm hover:shadow-lg hover:bg-[#222629] transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 delay-100">
+          <img src="assets/icons/thumb-icon4.png" alt="Finger Print Access" class="h-10 mb-4" />
+          <h4 class="font-bold text-2xl mb-2 text-black group-hover:text-white">Finger Print Access</h4>
+          <p class="text-md text-gray-600 mb-4 group-hover:text-white">Unlock doors with biometric access, secure and fast.</p>
+          <ul class="list-disc ml-4 text-sm space-y-1 text-gray-600 group-hover:text-gray-300">
+            <li>Biometric door unlocking</li>
+            <li>Access logs & reporting</li>
+            <li>Customizable user levels</li>
+          </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="group bg-white border p-8 rounded shadow-sm hover:shadow-lg hover:bg-[#222629] transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 delay-100">
+          <img src="assets/icons/camera-icon5.png" alt="Closed Circuit Cameras" class="h-10 mb-4" />
+          <h4 class="font-bold text-2xl mb-2 text-black group-hover:text-white">Closed Circuit Cameras</h4>
+          <p class="text-md text-gray-600 mb-4 group-hover:text-white">Keep an eye on everything with crystal-clear vision.</p>
+          <ul class="list-disc ml-4 text-sm space-y-1 text-gray-600 group-hover:text-gray-300">
+            <li>Night vision recording</li>
+            <li>Mobile viewing access</li>
+            <li>Motion alerts & playback</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <!-- Cards Grid -->
-    <div class="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
-      
-      <!-- Card 1 -->
-      <div class="group bg-white border p-10 rounded shadow-sm hover:shadow-lg hover:bg-[#222629] transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 delay-100">
-        <img src="assets/icons/thumb-icon4.png" alt="Finger Print Access" class="h-10 mb-4" />
-        <h4 class="font-bold text-2xl mb-2 text-black group-hover:text-white">Finger Print Access</h4>
-        <p class="text-md text-gray-600 mb-4 group-hover:text-white">
-          Unlock doors with biometric access, secure and fast.
-        </p>
-        <ul class="list-disc ml-4 text-sm space-y-1 text-gray-600 group-hover:text-gray-300">
-          <li>Biometric door unlocking</li>
-          <li>Access logs & reporting</li>
-          <li>Customizable user levels</li>
-        </ul>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="group bg-white border p-10 rounded shadow-sm hover:shadow-lg hover:bg-[#222629] transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 delay-100">
-        <img src="assets/icons/camera-icon5.png" alt="Closed Circuit Cameras" class="h-10 mb-4" />
-        <h4 class="font-bold text-2xl mb-2 text-black group-hover:text-white">Closed Circuit Cameras</h4>
-        <p class="text-md text-gray-600 mb-4 group-hover:text-white">
-          Keep an eye on everything with crystal-clear vision.
-        </p>
-        <ul class="list-disc ml-4 text-sm space-y-1 text-gray-600 group-hover:text-gray-300">
-          <li>Night vision recording</li>
-          <li>Mobile viewing access</li>
-          <li>Motion alerts & playback</li>
-        </ul>
-      </div>
-
+    <!-- Bottom Row Cards -->
+    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <!-- Card 3 -->
-      <div class="group bg-white border p-10 rounded shadow-sm hover:shadow-lg hover:bg-[#222629] transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 delay-100">
+      <div class="group bg-white border p-8 rounded shadow-sm hover:shadow-lg hover:bg-[#222629] transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 delay-100">
         <img src="assets/icons/setting-icon6.png" alt="CCTV Installation" class="h-10 mb-4" />
         <h4 class="font-bold text-2xl mb-2 text-black group-hover:text-white">CCTV Installation</h4>
-        <p class="text-md text-gray-600 mb-4 group-hover:text-white">
-          Professionally installed surveillance systems for total peace of mind.
-        </p>
+        <p class="text-md text-gray-600 mb-4 group-hover:text-white">Professionally installed surveillance systems for total peace of mind.</p>
         <ul class="list-disc ml-4 text-sm space-y-1 text-gray-600 group-hover:text-gray-300">
           <li>Indoor & outdoor cameras</li>
           <li>Central DVR/NVR setup</li>
@@ -501,12 +505,10 @@
       </div>
 
       <!-- Card 4 -->
-      <div class="group bg-white border p-10 rounded shadow-sm hover:shadow-lg hover:bg-[#222629] transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 delay-100">
-        <img src="assets\icons\dont_know-icon7.png" alt="HD Network IP Cameras" class="h-10 mb-4" />
+      <div class="group bg-white border p-8 rounded shadow-sm hover:shadow-lg hover:bg-[#222629] transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 delay-100">
+        <img src="assets/icons/dont_know-icon7.png" alt="HD Network IP Cameras" class="h-10 mb-4" />
         <h4 class="font-bold text-2xl mb-2 text-black group-hover:text-white">HD Network IP Cameras</h4>
-        <p class="text-md text-gray-600 mb-4 group-hover:text-white">
-          High-resolution cameras for crystal clear video and remote viewing.
-        </p>
+        <p class="text-md text-gray-600 mb-4 group-hover:text-white">High-resolution cameras for crystal clear video and remote viewing.</p>
         <ul class="list-disc ml-4 text-sm space-y-1 text-gray-600 group-hover:text-gray-300">
           <li>Up to 4K resolution</li>
           <li>Wi-Fi & PoE options</li>
@@ -515,25 +517,21 @@
       </div>
 
       <!-- Card 5 -->
-      <div class="group bg-white border p-10 rounded shadow-sm hover:shadow-lg hover:bg-[#222629] transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 delay-100">
+      <div class="group bg-white border p-8 rounded shadow-sm hover:shadow-lg hover:bg-[#222629] transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 delay-100">
         <img src="assets/icons/computer.png" alt="Security CCTV Camera" class="h-10 mb-4" />
         <h4 class="font-bold text-2xl mb-2 text-black group-hover:text-white">Security CCTV Camera</h4>
-        <p class="text-md text-gray-600 mb-4 group-hover:text-white">
-          Keep your property protected with reliable surveillance equipment.
-        </p>
+        <p class="text-md text-gray-600 mb-4 group-hover:text-white">Keep your property protected with reliable surveillance equipment.</p>
         <ul class="list-disc ml-4 text-sm space-y-1 text-gray-600 group-hover:text-gray-300">
           <li>Day & night coverage</li>
           <li>Wide-angle lenses</li>
           <li>Weather-resistant design</li>
         </ul>
       </div>
-
-      <!-- Optional Sixth Card -->
-      
-
     </div>
   </div>
 </section>
+
+
 
 
 
@@ -574,14 +572,14 @@
       </div>
       <div class="overflow-hidden rounded-lg">
         <img
-          src="./images/fuji_x100s_camera-wallpaper-1920x1200.jpg"
+          src="images\IMG_04.jpeg"
           alt="Camera 5"
           class="w-full h-64 object-cover"
         />
       </div>
       <div class="overflow-hidden rounded-lg">
         <img
-          src="./images/best_city_skylines-wallpaper-4320x1800.jpg"
+          src="images\IMG_05.jpeg"
           alt="Camera 6"
           class="w-full h-64 object-cover"
         />
@@ -658,7 +656,7 @@
         >
           <img
             id="testimonial-image"
-            src="https://randomuser.me/api/portraits/women/65.jpg"
+            src="https://lh3.googleusercontent.com/a/ACg8ocKfIyfVTCjoJo7hMaPXTznzKr20Rj0Hgq8S5d75Folbd-Zgzw=s120-c-rp-mo-s56-ba2-br100"
             alt="Main Client"
             class="w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover border-4 border-[#ff1749] shadow-xl mb-8"
           />
@@ -666,19 +664,14 @@
             id="testimonial-text"
             class="max-w-3xl mx-auto text-gray-300 text-lg mb-6 text-center"
           >
-            “Vestibulum finibus non nulla sed convallis. Nunc id justo eu est
-            condimentum mollis. Ut consequat, est sit amet venenatis ultrices,
-            enim odio euismod justo, malesuada dictum ipsum diam non ipsum.
-            Donec feugiat sit amet orci quis bibendum. Phasellus at ligula ac
-            eros pulvinar scelerisque at eu libero. Proin imperdiet at massa
-            eget vehicula”.
+          Pedro is very professional and accommodating all our requirements and installed our 3 security doors in Truganina today. Very responsive, will recommend my family and friends.”.
           </p>
-          <h3 id="testimonial-name" class="text-2xl font-bold">Nina Farell</h3>
+          <h3 id="testimonial-name" class="text-2xl font-bold">Ash Kumar</h3>
           <p
             id="testimonial-role"
             class="text-[#ff1749] uppercase tracking-wide text-sm"
           >
-            Client of Company
+            Valued Customer
           </p>
         </div>
 
@@ -787,24 +780,21 @@
   
     
     <!-- Footer Section -->
-
-    <footer class="bg-[#1F2327] text-white mt-6" id="footer">
+<footer class="bg-[#1F2327] text-white mt-6" id="footer">
   <!-- Top Section -->
   <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10">
-    
     <!-- Logo & Description -->
     <div>
       <div class="flex items-center mb-4 space-x-2">
-        <img src="assets\logo\PA-Flyscreen-Logo-Extract.jpg" alt="Logo" class="w-130 h-10" />
+        <img src="assets/logo/PA-Flyscreen-Logo-Extract.jpg" alt="Logo" class="w-130 h-10" />
       </div>
       <p class="text-sm text-gray-300 leading-relaxed mb-4">
-       At Wesecure, we specialize in delivering top-notch security solutions tailored to your needs — from CCTV installations to fingerprint access systems and smart security automation. Our commitment to safety, innovation, and reliability ensures your peace of mind at every step
+        We deliver cutting-edge security solutions crafted for your safety — from CCTV installations and biometric access control to complete smart automation. Experience peace of mind with technology that protects, detects, and supports around the clock.
       </p>
       <div class="flex space-x-4">
         <a href="https://www.facebook.com/people/PA-Flyscreens-Security-Doors/100076630375654/" class="w-10 h-10 rounded-xl bg-blue-700 flex items-center justify-center text-white hover:bg-[#FF0F47]">
           <i class="fab fa-facebook-f"></i>
         </a>
-       
       </div>
     </div>
 
@@ -825,98 +815,89 @@
       <ul class="space-y-2 text-sm text-gray-300">
         <li><a href="#contact" class="hover:text-[#FF0F47] transition">Contact</a></li>
         <li><a href="#" class="hover:text-[#FF0F47] transition">Support</a></li>
-        
       </ul>
     </div>
 
     <!-- Gallery -->
     <div>
-  <h3 class="text-xl font-bold mb-4 border-b-2 border-[#FF0F47] inline-block">Our Gallery</h3>
-
-  <div class="grid grid-cols-3 gap-4">
-    <!-- Image 1 -->
-    <div class="relative group w-full aspect-[4/3] rounded overflow-hidden">
-      <img src="images\photo-1558002038-1055907df827.avif" alt="Gallery 1" class="w-full h-full object-cover transition group-hover:opacity-50" />
-      <div class="absolute inset-0 bg-[#FF0F47]/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-        <p class="text-white text-3xl">+</p>
-      </div>
-    </div>
-
-    <!-- Image 2 -->
-    <div class="relative group w-full aspect-[4/3] rounded overflow-hidden">
-      <img src="images\bridge_city_night_lights_urban_travel_visit-wallpaper-4320x1800.jpg" alt="Gallery 2" class="w-full h-full object-cover transition group-hover:opacity-50" />
-      <div class="absolute inset-0 bg-[#FF0F47]/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-        <p class="text-white text-3xl">+</p>
-      </div>
-    </div>
-
-    <!-- Image 3 -->
-    <div class="relative group w-full aspect-[4/3] rounded overflow-hidden">
-      <img src="images\best_city_skylines-wallpaper-4320x1800.jpg" alt="Gallery 3" class="w-full h-full object-cover transition group-hover:opacity-50" />
-      <div class="absolute inset-0 bg-[#FF0F47]/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-        <p class="text-white text-3xl">+</p>
-      </div>
-    </div>
-
-    <!-- Image 4 -->
-    <div class="relative group w-full aspect-[4/3] rounded overflow-hidden">
-      <img src="images\fuji_x100s_camera-wallpaper-1920x1200.jpg" alt="Gallery 4" class="w-full h-full object-cover transition group-hover:opacity-50" />
-      <div class="absolute inset-0 bg-[#FF0F47]/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-        <p class="text-white text-3xl">+</p>
-      </div>
-    </div>
-
-    <!-- Image 5 -->
-    <div class="relative group w-full aspect-[4/3] rounded overflow-hidden">
-      <img src="images\dubai_at_night_cityscape-wallpaper-1440x1080.jpg" alt="Gallery 5" class="w-full h-full object-cover transition group-hover:opacity-50" />
-      <div class="absolute inset-0 bg-[#FF0F47]/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-        <p class="text-white text-3xl">+</p>
-      </div>
-    </div>
-
-    <!-- Image 6 -->
-    <div class="relative group w-full aspect-[4/3] rounded overflow-hidden">
-      <img src="images\photo-1566060475410-1159300f046f.avif" alt="Gallery 6" class="w-full h-full object-cover transition group-hover:opacity-50" />
-      <div class="absolute inset-0 bg-[#FF0F47]/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-        <p class="text-white text-3xl">+</p>
+      <h3 class="text-xl font-bold mb-4 border-b-2 border-[#FF0F47] inline-block">Our Gallery</h3>
+      <div class="grid grid-cols-3 gap-4">
+        <!-- 6 Gallery Images -->
+        <div class="relative group w-full aspect-[4/3] rounded overflow-hidden">
+          <img src="images/IMG_01.jpeg" alt="Gallery 1" class="w-full h-full object-cover transition group-hover:opacity-50" />
+          <div class="absolute inset-0 bg-[#FF0F47]/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <p class="text-white text-3xl">+</p>
+          </div>
+        </div>
+        <div class="relative group w-full aspect-[4/3] rounded overflow-hidden">
+          <img src="images/IMG_02.jpeg" alt="Gallery 2" class="w-full h-full object-cover transition group-hover:opacity-50" />
+          <div class="absolute inset-0 bg-[#FF0F47]/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <p class="text-white text-3xl">+</p>
+          </div>
+        </div>
+        <div class="relative group w-full aspect-[4/3] rounded overflow-hidden">
+          <img src="images/IMG_03.jpeg" alt="Gallery 3" class="w-full h-full object-cover transition group-hover:opacity-50" />
+          <div class="absolute inset-0 bg-[#FF0F47]/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <p class="text-white text-3xl">+</p>
+          </div>
+        </div>
+        <div class="relative group w-full aspect-[4/3] rounded overflow-hidden">
+          <img src="images/IMG_04.jpeg" alt="Gallery 4" class="w-full h-full object-cover transition group-hover:opacity-50" />
+          <div class="absolute inset-0 bg-[#FF0F47]/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <p class="text-white text-3xl">+</p>
+          </div>
+        </div>
+        <div class="relative group w-full aspect-[4/3] rounded overflow-hidden">
+          <img src="images/IMG_05.jpeg" alt="Gallery 5" class="w-full h-full object-cover transition group-hover:opacity-50" />
+          <div class="absolute inset-0 bg-[#FF0F47]/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <p class="text-white text-3xl">+</p>
+          </div>
+        </div>
+        <div class="relative group w-full aspect-[4/3] rounded overflow-hidden">
+          <img src="images/IMG_06.jpeg" alt="Gallery 6" class="w-full h-full object-cover transition group-hover:opacity-50" />
+          <div class="absolute inset-0 bg-[#FF0F47]/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <p class="text-white text-3xl">+</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-  </div>
-
-  <!-- Bottom Bar -->
+  <!-- Bottom Section -->
   <div class="bg-[#FF0F47] text-white py-6">
-    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
-      
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
       <!-- Contact Info -->
-      <!-- Bottom Bar -->
-<div class="bg-[#FF0F47] text-white py-6">
-  <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
-    
-    <!-- Primary Contact Info (As per your request) -->
-    <div class="text-sm text-center md:text-left space-y-1">
-      <p><strong>PRIMARY CONTACT:</strong> Pedro Alves</p>
-      <p><strong>PHONE:</strong> +61 451 898 344</p>
-      <p><strong>ADDRESS:</strong> 53 Jutland Way, Epping VIC 3076</p>
-    </div>
-
-    <!-- Copyright -->
-    
-
-
+      <div class="flex items-center gap-6 flex-wrap text-sm">
+        <div class="flex items-center gap-2">
+          <i class="fas fa-envelope text-white"></i>
+          <span>info@gmail.com</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i class="fas fa-phone-alt text-white"></i>
+          <span>+91 584 3684 698</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i class="fas fa-map-marker-alt text-white"></i>
+          <span>66 Broklyn Street, USA</span>
+        </div>
+      </div>
 
       <!-- Copyright -->
-  <footer class="bg-black text-white py-4">
-  <div class="max-w-6xl mx-auto px-4">
-    <div class="flex justify-start">
-      <div class="text-sm text-white">
-        Copyright © 2021 Wesecure. All rights reserved.
+      <div class="mt-4 md:mt-0 ml-auto">
+        <p class="bg-black text-white px-4 py-2 rounded-lg text-sm w-max">
+          © 2021 Wesecure. All rights reserved.
+        </p>
       </div>
     </div>
   </div>
+
+  <!-- Scroll to Top Button -->
+  <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="fixed bottom-6 right-6 bg-[#FF0F47] hover:bg-black text-white p-3 rounded-full shadow-lg transition">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 </footer>
+
+
 
 
 
@@ -1054,6 +1035,9 @@
         });
       });
     </script>
+
+   
+
   
   </body>
 </html>
