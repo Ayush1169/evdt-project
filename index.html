@@ -106,51 +106,47 @@
   </head>
   <body class="bg-white text-[#1e2226]">
     <!-- Top Bar -->
-    <section class="hidden sm:block bg-[#1e2226] px-4 sm:px-6 lg:px-10">
-      <div
-        class="max-w-[1100px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center py-3 gap-3 h-16"
-      >
-        <div class="flex flex-wrap items-center gap-4 text-white text-sm">
-          <div class="flex items-center gap-2">
-            <div
-              class="bg-[#ff1749] w-7 h-7 flex items-center justify-center rounded-full text-xs"
-            >
-              <i class="bi bi-envelope"></i>
-            </div>
-               <a href="mailto:padoors.flyscreens@gmail.com" class="text-xs sm:text-sm text-blue-600 hover:underline">
-    padoors.flyscreens@gmail.com
-  </a>
-          </div>
-          <div class="flex items-center gap-2">
-            <div
-              class="bg-[#ff1749] w-7 h-7 flex items-center justify-center rounded-full text-xs"
-            >
-              <i class="bi bi-telephone"></i>
-            </div>
-              <a href="tel:+61451898344" class="text-xs sm:text-sm text-blue-600 hover:underline">
-  +61 451 898 344
-</a>
-          </div>
+    <section class="hidden sm:block bg-[#1e2226] px-4 sm:px-6 lg:px-10 py-4">
+  <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4 min-h-[80px]">
+    
+    <!-- 📧 Email and Phone -->
+    <div class="flex flex-wrap items-center gap-6 text-white text-sm">
+      <!-- Email -->
+      <div class="flex items-center gap-2">
+        <div class="bg-[#ff1749] w-8 h-8 flex items-center justify-center rounded-full text-sm">
+          <i class="bi bi-envelope"></i>
         </div>
-        <div
-          class="flex flex-col sm:flex-row items-start sm:items-center gap-3 text-white text-sm w-full sm:w-auto h-full"
-        >
-          <div class="flex items-center gap-2">
-            <div
-              class="bg-[#ff1749] w-7 h-7 flex items-center justify-center rounded-full text-xs"
-            >
-              <i class="bi bi-clock"></i>
-            </div>
-<div class="text-xs sm:text-sm leading-tight px-1 py-1 space-y-1">
-  <div>Mon–Fri: 7:30am – 5:00pm</div>
-  <div>Sat: 8:00am – 3:00pm</div>
-  <div>Sun: Closed</div>
-</div>
-
-
-        </div>
+        <a href="mailto:padoors.flyscreens@gmail.com" class="text-sm text-white hover:underline">
+          padoors.flyscreens@gmail.com
+        </a>
       </div>
-    </section>
+
+      <!-- Phone -->
+      <div class="flex items-center gap-2">
+        <div class="bg-[#ff1749] w-8 h-8 flex items-center justify-center rounded-full text-sm">
+          <i class="bi bi-telephone"></i>
+        </div>
+        <a href="tel:+61451898344" class="text-sm text-white hover:underline">
+          +61 451 898 344
+        </a>
+      </div>
+    </div>
+
+    <!-- 🕒 Hours -->
+    <div class="flex items-center gap-3 text-white text-sm">
+      <div class="bg-[#ff1749] w-8 h-8 flex items-center justify-center rounded-full text-sm">
+        <i class="bi bi-clock"></i>
+      </div>
+      <div class="text-sm leading-normal px-2 py-3">
+        <div>Mon–Fri: 7:30am – 5:00pm</div>
+        <div>Sat: 8:00am – 3:00pm</div>
+        <div>Sun: Closed</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
     <!-- Navigation -->
     <section class="bg-white w-full relative">
@@ -179,6 +175,7 @@
           <li><a href="#home" class="hover:text-[#f91c52]">Home</a></li>
           <li><a href="#about" class="hover:text-[#f91c52]">About Us</a></li>
           <li><a href="#services" class="hover:text-[#f91c52]">Services</a></li>
+          <li><a href="#contact" class="hover:text-[#f91c52]">Contact</a></li>
           
       </ul>
 
@@ -221,6 +218,9 @@
       </li>
       <li class="hover:text-[#f91c52] cursor-pointer">
         <a href="#services" class="inline-block">Services</a>
+      </li>
+      <li class="hover:text-[#f91c52] cursor-pointer">
+        <a href="#contact" class="inline-block">Contact</a>
       </li>
     </ul>
 
@@ -305,7 +305,7 @@
   </div>
 
   <!-- Overlapping Cards -->
-  <div class="sm:absolute sm:bottom-[-60px] sm:left-1/2 sm:transform sm:-translate-x-1/2 w-full max-w-6xl px-4 z-[3] mt-10 sm:mt-0">
+  <div class="sm:absolute sm:bottom-[-100px] sm:left-1/2 sm:transform sm:-translate-x-1/2 w-full max-w-6xl px-4 z-[3] mt-10 sm:mt-0">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       
       <!-- Card 1 -->
@@ -315,12 +315,18 @@
             <svg class="w-6 h-6 text-[#f91c52]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M10 2L2 7v11h6v-5h4v5h6V7l-8-5z" />
             </svg>
-            <h3 class="text-lg font-semibold">Home Security</h3>
+            <h3 class="text-lg font-semibold">Security Doors</h3>
           </div>
           <span class="text-2xl font-bold text-white/20">01</span>
         </div>
         <p class="text-sm text-white/80">
-          Made-to-measure flyscreens and advanced monitoring systems to keep your home safe, secure, and comfortable.
+          -Stylish protection that lasts – Tough materials with modern designs to suit any home. <br>
+ 
+
+-Maximum security, minimal hassle – Keep your home safe without sacrificing style. <br>
+ 
+
+-Custom-fit & professionally installed – Built for strength, installed for peace of mind. 
         </p>
       </div>
 
@@ -331,12 +337,16 @@
             <svg class="w-6 h-6 text-[#f91c52]" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2a10 10 0 0 0-10 10v4a2 2 0 0 0 2 2h4v-6H6v-2a6 6 0 0 1 12 0v2h-2v6h4a2 2 0 0 0 2-2v-4a10 10 0 0 0-10-10z" />
             </svg>
-            <h3 class="text-lg font-semibold">Information Security</h3>
+            <h3 class="text-lg font-semibold">Security Windows</h3>
           </div>
           <span class="text-2xl font-bold text-white/20">02</span>
         </div>
         <p class="text-sm text-white/80">
-          Secure your digital presence with robust data protection, privacy controls, and encrypted communications.
+         -Clear views, complete protection – Reinforced screens that don’t block your outlook. <br>
+ 
+-Let the breeze in, keep threats out – Designed for airflow without compromising safety. <br>
+ 
+-Low-maintenance, high durability – Weather-resistant and built to last. 
         </p>
       </div>
 
@@ -344,15 +354,21 @@
       <div class="bg-black/90 text-white p-6 rounded-lg shadow-2xl min-h-[260px] transition hover:scale-[1.02]">
         <div class="flex justify-between items-center mb-4">
           <div class="flex items-center gap-2">
-            <svg class="w-6 h-6 text-[#f91c52]" fill="currentColor" viewBox="0 0 24 24">
+            <svg class="w-6 h-8 text-[#f91c52]" fill="currentColor" viewBox="0 0 24 24">
               <path d="M18 13v-2a6 6 0 1 0-12 0v2H4v6h16v-6h-2zm-6 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
             </svg>
-            <h3 class="text-lg font-semibold">Useful Support</h3>
+            <h3 class="text-lg font-semibold">Flyscreens</h3>
           </div>
           <span class="text-2xl font-bold text-white/20">03</span>
         </div>
         <p class="text-sm text-white/80">
-          24/7 expert support for installations, troubleshooting, and customer queries—fast, friendly, and reliable.
+          -Breathe easy, bug-free living – Let the fresh air in while keeping insects out. <br>
+ 
+
+-Tailored to your home – Custom-fit to all window and door types. <br>
+ 
+
+-Discreet but strong – Sleek look with tough mesh that stands up to daily use 
         </p>
       </div>
 
@@ -535,7 +551,8 @@
 
 
 
-<section class="bg-white py-8">
+<section id="gallery"
+ class="bg-white py-8">
   <div class="container mx-auto px-4">
     <!-- Images Grid: 3 on Top, 3 on Bottom -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-8">
@@ -896,13 +913,19 @@
     </div>
 
     <!-- Copyright -->
-    <div class="mt-4 md:mt-0 ml-auto">
-      <p class="bg-black text-white px-4 py-2 rounded-lg text-sm w-max">
-        © 2025 P.A. Doors. All rights reserved.
-      </p>
-    </div>
+   <!-- Copyright -->
+<!-- Copyright -->
+<div class="bg-black py-6">
+  <div class="container mx-auto text-center">
+    <p class="text-white text-sm">
+      24/7 TOWY © 2025 All Rights Reserved. Website Designed by 
+      <a href="https://towtruckwagga.com.au/" class="text-blue-400 hover:underline inline" target="_blank">
+        towtruckwagga.com.au
+      </a>
+    </p>
   </div>
 </div>
+
 
 
   <!-- Scroll to Top Button -->
